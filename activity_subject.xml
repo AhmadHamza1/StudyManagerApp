@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtSubjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explanation"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Grades"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/editQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quiz Mark"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editAssignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Assignment Mark"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Final Exam Mark"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Result"
+            android:onClick="showResult"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+</ScrollView>
